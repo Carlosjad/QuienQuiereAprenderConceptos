@@ -9,7 +9,7 @@ Juego basado en quien quiere ser millonario adaptado para repasar y aprender con
 
 3- En una consola(terminal) ejecutada como administrador ejecutar el comando npm install
 
-4- Una vez terminado el proceso de instalacion se debe correr el proyecto con el comando npm star
+4- Una vez terminado el proceso de instalacion se debe correr el proyecto con el comando npm start
 
 5- Disfruta del juego
 
