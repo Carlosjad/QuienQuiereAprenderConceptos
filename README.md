@@ -24,3 +24,7 @@ Juego basado en quien quiere ser millonario adaptado para repasar y aprender con
 4- El archivo debe tener una cabecera con las columnas de la siguiente manera: OPCION A, OPCION B, OPCION C, OPCION D, PREGUNTA, RESPUESTA, PISTA
 
 5- En donde se ponen en orden las 4 opciones de respuesta, la pregunta, la letra de la respuesta (a,b,c,d) y al finalizar una pista para la ayuda que se tiene en el juego
+ 
+6- En caso de que se aumenten preguntas se debe ingresar en el proyecto al archivo juego.js ubicado en la ruta qqac\src\js en la linea 113 y modificar el for (let i = 2; i <=16; i++) modificandole el 16 por el numero de la fila maxima que se tiene en el archivo excel
+
+7- Por ultimo se guardan los archivos se realiza la recarga del proyecto para que se tomen las nuevas preguntas
