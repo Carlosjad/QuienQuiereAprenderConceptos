@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+     <!-- --------------------------- bootstrap y css --------------------------- -->
+     <link rel="stylesheet" href="../css/juego.css">
+     <link rel = "stylesheet" href="../css/bootstrap-4.4.1-dist/css/bootstrap.min.css">
+     <!-- ------------------------------ script js ------------------------------ -->
+     <script src="../js/juego.js"></script>
+</head>
+<body>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                              efecto carga                               -->
+<!-- ----------------------------------------------------------------------- -->
+<div id="contenedor_carga">
+    <div id="carga"></div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                               cronometro                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+    <section>
+        <div class="wrap">
+            <div class="widget">
+                <div class="cronometro" id="cronometro">
+                    <p id="segundos" class="segundos"></p> &nbsp; <p>seg</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                                 ayudas                                  -->
+    <!-- ----------------------------------------------------------------------- -->
+    <br>
+    <section>
+        <div class="container-fluid" id="containerAyudas">
+            <h3>Ayudas!</h3>
+            <div class="container" id="ayudas" style="font-size: 0.7em;">
+                <div class="row">
+                    <div class="col" id="cincuentaCincuenta">50/50</div>
+                    <div class="col" id="pista">pista sobre la pregunta</div>
+                    <div class="col" id="masSegundos">30 segundos mas</div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                                preguntas                                -->
+<!-- ----------------------------------------------------------------------- -->
+
+    <br><br>
+    <section>
+        <div class="container-fluid">
+            <div class="container" id="preguntas">
+                <h3 id="pregunta"></h3>
+                <div class="row" style="font-size: 0.8em;">
+                    <div class="col" id="a"></div>
+                    <div class="col" id="b"></div>
+                    <div class="w-100"></div>
+                    <div class="col" id="c"></div>
+                    <div class="col" id="d"></div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                            mensaje y boton                              -->
+    <!-- ----------------------------------------------------------------------- -->
+
+    <br><br>
+    <section>
+        <div class="container" id="alertas">
+            <div class="row">
+                <div class="col-10">
+                    <div class="alert alert-success" role="alert" id="alertaOk">
+                        <h4 class="alert-heading">Bien hecho!</h4>
+                        <p>Es la respuesta correcta.</p>                           
+                    </div>
+                    <div class="alert alert-danger" role="alert" id="alertaError">
+                        <h4 class="alert-heading">Incorrecto!</h4>
+                        <p>Es la respuesta incorrecta.</p>                        
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="btnOk" id="btnOk">
+                        <button type="button" class="btn btn-success">Siguiente</button>
+                    </div>
+                    <div class="btnError" id="btnError">
+                        <button type="button" class="btn btn-danger">Reiniciar</button>
+                    </div>
+                    <div class="btnSalir" id="btnSalir">
+                        <button type="button" class="btn btn-primary">Salir</button>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+</body>
+
+</html>
